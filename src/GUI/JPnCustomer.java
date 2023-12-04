@@ -30,8 +30,8 @@ public class JPnCustomer extends javax.swing.JPanel {
          initComponents();
         dtmkhach = (DefaultTableModel)tblKH.getModel();
        
-        loaddataKH();
-        searchLive();
+        loaddataKH();// load table khach hang
+        searchLive();//ho tro tim kiem nhanh theo ten
     }
 
     /**

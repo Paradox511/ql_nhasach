@@ -50,9 +50,9 @@ public class Menu extends javax.swing.JFrame {
          cate.add(new category("Khuyến mãi",JPnVoucher));
          cate.add(new category("Default",JPnHome));
 //         cate.add(new category("Nhap",JPnStorage));
-                 addcontrols();
+                 addcontrols();//phan quyen
 
-         controller.setEvent(cate);
+         controller.setEvent(cate);// cai dat cac event hover,click,mouse exit...
         
          
 

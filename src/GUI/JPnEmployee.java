@@ -48,10 +48,10 @@ ButtonGroup gender = new ButtonGroup();
         initComponents();
                 dtmNhanvien = (DefaultTableModel)tblNhanvien.getModel();
 
-        loadtblNhanvien();
-        loadquyen();
-        loadnv();
-        searchLive();
+        loadtblNhanvien(); // load table nhan vien
+        loadquyen(); // load quyen
+        loadnv(); // load nhan vien de them tai khoan
+        searchLive(); //ho tro tim kiem nhanh
         
     }
 

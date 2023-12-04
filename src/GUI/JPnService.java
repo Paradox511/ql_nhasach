@@ -82,7 +82,7 @@ ArrayList<sachDTO> listSach = new ArrayList<>();
         };
     });
     }
-    private void loadDataHoaDon() {
+    private void loadDataHoaDon() {//load các hóa đơn
                
                 dtmhd.setRowCount(0);
 
@@ -105,7 +105,7 @@ ArrayList<sachDTO> listSach = new ArrayList<>();
     }
      
      
-    private void loadDatacthd() {
+    private void loadDatacthd() { // load các chi tiết hóa đơn
         dtmcthd.setRowCount(0);
 
         ArrayList<CTHoaDon> dssp = cthdbus.getListCTHoaDon();
@@ -123,7 +123,7 @@ ArrayList<sachDTO> listSach = new ArrayList<>();
      
         }
     }
-private void loadDataLenBangSanPham() {
+private void loadDataLenBangSanPham() {//load sản phẩm lên bảng sản phẩm
         sach_bus.doclistSach();
         dtmsach.setRowCount(0);
         
@@ -174,7 +174,6 @@ private void loadDataLenBangSanPham() {
         jlbTheloai = new javax.swing.JLabel();
         txttim = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        btntim = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel12 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -348,16 +347,6 @@ private void loadDataLenBangSanPham() {
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("Tìm kiếm");
         jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 320, 90, 30));
-
-        btntim.setBackground(new java.awt.Color(213, 214, 217));
-        btntim.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\Desktop\\Java\\ql_nhasach\\image\\icons\\Search.png")); // NOI18N
-        btntim.setText("Tìm");
-        btntim.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btntimActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btntim, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 320, 100, 30));
 
         jSeparator1.setBackground(new java.awt.Color(105, 107, 109));
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -772,11 +761,6 @@ private void loadDataLenBangSanPham() {
         add(jtab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 650));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btntimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btntimActionPerformed
-        // TODO add your handling code here:
-   
-    }//GEN-LAST:event_btntimActionPerformed
-
     private void txttimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttimActionPerformed
         // TODO add your handling code here:
         xuLyLiveSearching();
@@ -924,6 +908,7 @@ ArrayList<sachDTO> cartlist = new ArrayList<sachDTO>();
 ArrayList<CTHoaDon> cthd = new ArrayList();
     private void btnCartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCartActionPerformed
         // TODO add your handling code here:
+        //button thêm vào giỏ
        if(tblSach.getSelectedRow() <0){
             JOptionPane.showMessageDialog(null,"Vui lòng chọn đầu sách.");
             return;
@@ -1276,7 +1261,6 @@ ArrayList<CTHoaDon> cthd = new ArrayList();
     public javax.swing.JButton btnDeleteCart;
     public javax.swing.JButton btnReset;
     public javax.swing.JButton btnbill;
-    public javax.swing.JButton btntim;
     public javax.swing.JComboBox cmbSort;
     public javax.swing.JComboBox cmbnv;
     public javax.swing.JButton jButton1;

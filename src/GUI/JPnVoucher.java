@@ -28,7 +28,7 @@ public class JPnVoucher extends javax.swing.JPanel {
     public JPnVoucher() {
       
         initComponents();
-        loadtblgg();
+        loadtblgg();//load tac gia len bang tac gia
     }
 
     /**

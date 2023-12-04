@@ -62,15 +62,15 @@ ArrayList<sachDTO> listSach = new ArrayList<>();
                  dtmsearch = (DefaultTableModel) tblKho.getModel();
 
          loadDataLenBangSanPham();
-         loadDataCmbMaTheLoai();
-         loadDataCmbMatacgia();
-         loadDataCmbNV();
-         loadDatapn();
-         loadDatactpn();    
-         searchLive();
+         loadDataCmbMaTheLoai(); //load data combo box the loai khi them dau sach
+         loadDataCmbMatacgia(); //load data combo box tac gia khi them dau sach
+         loadDataCmbNV(); //load data combo box nhan vien khi lap phieu nhap
+         loadDatapn(); //load data cac phieu nhap
+         loadDatactpn();    // load data cac chi tiet phieu nhap
+         searchLive(); //ho tro tim kiem nhanh san pham
 
                  dtmcart.setRowCount(0);
-                                tblKho.setDefaultRenderer(Object.class, new MyTableCellRenderer(4));
+                                tblKho.setDefaultRenderer(Object.class, new MyTableCellRenderer(4));//combo box filter bang san pham
 
 
     }
